@@ -44,8 +44,8 @@ class mythemedata{
       selectedItemColor: Colors.white,
      ),
      textTheme:TextTheme(
-       bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: accentcolor),
-       labelMedium: TextStyle(fontSize: 18,color: accentcolor),
+       bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: primarDarkycolor),
+       labelMedium: TextStyle(fontSize: 18,color: primarDarkycolor),
      )
  );
 
