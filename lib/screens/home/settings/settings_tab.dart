@@ -66,16 +66,16 @@ class _SettingsTabState extends State<SettingsTab> {
       ],
     );
   }
-}
+  void ThemeBottomSheet() {
+    showModalBottomSheet(context: context, builder: (context){
+      return ThemebottomSheet();
+    });
+  }
 
-void ThemeBottomSheet() {
-  showModalBottomSheet(context: context, builder: (context){
-    return ThemebottomSheet();
-  });
-}
+  void LanguageBottomSheet() {
+    showModalBottomSheet(context: context, builder: (context){
+      return LanguagebottomSheet();
+    });
+  }
 
-void LanguageBottomSheet() {
-  showModalBottomSheet(context: context, builder: (context){
-    return LanguagebottomSheet();
-  });
 }
