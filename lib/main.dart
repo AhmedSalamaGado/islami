@@ -7,6 +7,7 @@ import 'package:islami/screens/home/home_screen.dart';
 import 'package:islami/screens/sura_details/sura_details_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -15,6 +16,7 @@ void main() {
 }
 class myApp extends StatelessWidget {
   late settingsProvider provider;
+  final pref = SharedPreferences.getInstance();
 
 
   @override

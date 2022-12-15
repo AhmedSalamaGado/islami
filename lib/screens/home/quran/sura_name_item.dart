@@ -20,7 +20,7 @@ class SuraNameItem extends StatelessWidget {
           children: [
             Text(
               suraname,
-              style: Theme.of(context).textTheme.bodyMedium,
+              style: Theme.of(context).textTheme.displayMedium,
               textAlign: TextAlign.center,
             ),
             Divider(
