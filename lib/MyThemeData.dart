@@ -25,6 +25,8 @@ class mythemedata{
    textTheme:TextTheme(
      bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: accentcolor),
      labelMedium: TextStyle(fontSize: 18,color: accentcolor),
+     displayMedium: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.black),
+     displayLarge: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.white),
    )
  );
  static ThemeData darkMode = ThemeData (
@@ -41,11 +43,13 @@ class mythemedata{
       elevation: 0,
      ),
      bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      selectedItemColor: Colors.white,
+      selectedItemColor: primarycolor,
      ),
      textTheme:TextTheme(
        bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: primarDarkycolor),
        labelMedium: TextStyle(fontSize: 18,color: primarDarkycolor),
+       displayMedium: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.white),
+       displayLarge: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.white),
      )
  );
 

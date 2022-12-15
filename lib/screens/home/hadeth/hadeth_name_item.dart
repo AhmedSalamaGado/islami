@@ -19,10 +19,7 @@ class HadethNameItem extends StatelessWidget {
           children: [
             Text(
               hadethname.title,
-              style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  color: mythemedata.accentcolor),
+              style: Theme.of(context).textTheme.displayMedium
             ),
             Divider(
               thickness: 2,

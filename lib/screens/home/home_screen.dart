@@ -19,7 +19,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int selcteditme = 4;
-  List<Widget> tabs = [QuranTab(), HadethTab(), SebhaTab(), RadioTab(),SettingsTab()];
+  List<Widget> tabs = [
+    QuranTab(),
+    HadethTab(),
+    SebhaTab(),
+    RadioTab(),
+    SettingsTab()
+  ];
   @override
   Widget build(BuildContext context) {
     settingsProvider provider = Provider.of(context);
@@ -37,8 +43,10 @@ class _HomeScreenState extends State<HomeScreen> {
           )),
         ),
         bottomNavigationBar: Theme(
-          data:
-              Theme.of(context).copyWith(canvasColor: mythemedata.primarycolor),
+          data: Theme.of(context).copyWith(
+              canvasColor: provider.currentTheme == ThemeMode.light
+                  ? mythemedata.primarycolor
+                  : mythemedata.primarDarkycolor),
           child: BottomNavigationBar(
             currentIndex: selcteditme,
             onTap: (tabindex) {
