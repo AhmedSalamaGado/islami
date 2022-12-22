@@ -46,7 +46,7 @@ class mythemedata{
       selectedItemColor: primarycolor,
      ),
      textTheme:TextTheme(
-       bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: primarDarkycolor),
+       bodyMedium: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: primarycolor),
        labelMedium: TextStyle(fontSize: 18,color: primarDarkycolor),
        displayMedium: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.white),
        displayLarge: TextStyle(fontSize: 25,fontWeight: FontWeight.w400,color: Colors.white),
