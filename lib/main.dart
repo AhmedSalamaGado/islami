@@ -9,6 +9,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+
 void main() {
   runApp(ChangeNotifierProvider(
       create: (context) => settingsProvider(),
@@ -16,12 +17,10 @@ void main() {
 }
 class myApp extends StatelessWidget {
   late settingsProvider provider;
-  final pref = SharedPreferences.getInstance();
 
-
-  @override
   Widget build(BuildContext context) {
     provider=Provider.of(context);
+    getvaluefromprefrances();
     return MaterialApp(
       routes: {
         HomeScreen.routeName:(_)=>HomeScreen(),
@@ -44,6 +43,19 @@ class myApp extends StatelessWidget {
       darkTheme: mythemedata.darkMode,
       themeMode: provider.currentTheme,
     );
+  }
+  void getvaluefromprefrances()
+ async {
+    final prefs = await SharedPreferences.getInstance();
+    provider.currentLocal=prefs.getString("language")??"en";
+    if(prefs.getString('theme')=='dark')
+      {
+        provider.currentTheme=ThemeMode.dark;
+      }
+    else if(prefs.getString('theme')=='light')
+    {
+      provider.currentTheme=ThemeMode.light;
+    }
   }
 }
 
