@@ -50,7 +50,7 @@ class _HadethTabState extends State<HadethTab> {
   readahadethfile() async {
     String filecontent = await rootBundle.loadString("assets/quran/ahadeth .txt");
     List<String> ahadeth = filecontent.split("#\r\n");
-    for (int i = 0; i < filecontent.length; i++) {
+    for (int i = 0; i < ahadeth.length; i++) {
       print("Ahadeth${ahadeth.length}");
       List<String> hadethsingleline = ahadeth[i].split('\n');
       String title = hadethsingleline[0];

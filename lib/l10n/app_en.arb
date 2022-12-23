@@ -5,6 +5,10 @@
 "sebha": "Sebha",
 "radio": "Radio",
 "quran": "Quran",
-"settings": "Settings"
+"settings": "Settings",
+"language": "Language",
+"theme":"Theme",
+"dark":"Dark",
+"light":"Light"
 
 }

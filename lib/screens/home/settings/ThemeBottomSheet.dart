@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami/provider/settings_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class ThemebottomSheet extends StatelessWidget {
   @override
@@ -14,17 +16,19 @@ class ThemebottomSheet extends StatelessWidget {
           },
           child: Container(
               child: Text(
-            "Light",
+          "Light",
             style: Theme.of(context).textTheme.bodyMedium,
           )),
         ),
         InkWell(
           onTap: () {
             provider.changeThema(ThemeMode.dark);
+            Navigator.pop(context);
+
           },
           child: Container(
               child: Text(
-            "Dark",
+                "Dark",
             style: Theme.of(context).textTheme.bodyMedium,
           )),
         ),
