@@ -23,6 +23,8 @@ class LanguagebottomSheet extends StatelessWidget {
           child: InkWell(
             onTap: () {
               provider.changeLocal("ar");
+              Navigator.pop(context);
+
             },
             child: Text(
               "العربيه",
